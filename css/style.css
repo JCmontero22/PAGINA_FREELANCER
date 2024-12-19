@@ -1,5 +1,5 @@
 html {
-   box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 62.5%;
     min-height: 100%;
     position: relative;
@@ -17,16 +17,115 @@ html {
 body{
     font-size: 1.6rem;
      height: 100%;
+     font-family: "Ubuntu", serif;
 }
 
-
+/*************** VARIABLES ***************/
 :root{
+    /* Colores */
     --colorFondo: #000000;
+    --fondoNav:  #60696bd5;
+    --colorHoverNav: #3a3a3a;
+    --colorBlanco: #eeee;
 
+    /* Fuente */
     --fuentePrincipal: 3.8rem;
 }
 
-.titulo{
+
+/*************** CLASES GENERALES ***************/
+.contenedor{
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+h1{
     text-align: center;
     font-size: var(--fuentePrincipal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+/*************** HEADER ***************/
+
+/*************** MENU ***************/
+.nav-fondo{
+    background: var(--fondoNav);
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    padding: 1rem;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navegacion-principal a:hover{
+    background-color:  var(--colorHoverNav);
+}
+
+/*************** HERO ***************/
+.hero{
+    background-image: url(../img/img-banner/header.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2{
+    margin-bottom: 5rem;
+    color: var(--colorBlanco);
+}
+
+.contenido-hero p{
+    color: var(--colorBlanco);
+}
+
+.boton-contacto{
+    background-color: var(--fondoNav);
+    color: var(--colorBlanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+}
+
+/*************** MEDIA QUERIS 768 ***************/
+@media screen and (max-width: 768px){
+    .navegacion-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*************** MEDIA QUERY 480 ***************/
+@media screen and (max-width: 480px){
+    
 }
