@@ -26,7 +26,7 @@
         $mail->Password = 'camilomontero94@';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
         $mail->Port = 465; // Usar el puerto 587 para STARTTLS
-        $mail->setFrom('jcmonter_envios@jcmonterodev.pw', 'JMontero');
+        $mail->setFrom('jcmonter_envios@jcmonterodev.pw', 'JMontero Frelance');
         $mail->addAddress('johan00712@gmail.com');
         
         $mail->isHTML(true);
