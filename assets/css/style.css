@@ -102,7 +102,10 @@ h1,h2,h3{
 }
 
 /*************** HEADER ***************/
-
+header{
+    height: 10rem;
+    padding: 2rem;
+}
 /*************** MENU ***************/
 .nav-fondo{
     background: var(--fondoNav);
