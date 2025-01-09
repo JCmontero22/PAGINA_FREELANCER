@@ -33,19 +33,15 @@
     <!-- Menu -->
     <div class="nav-fondo">
         <nav class="contenedor navegacion-principal">
-            <a href="./nosotros.html">Inicio</a>
-            <a href="./nosotros.html">Nosotros</a>
-            <a href="./nosotros.html">Clientes</a>
-            <a href="./nosotros.html">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </div>
     
     <!-- Hero -->
     <section class="hero">
         <div class="contenido-hero">
-            <!-- <header>
-                <h1 class="titulo">Johan Montero</h1>
-            </header> -->
             <h2>Diseño y Desarrollo Web Frelancer</h2>
             <p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="100" height="100" stroke-width="2">
@@ -58,63 +54,75 @@
             </p>
             <p>Bogota Colombia.</p>
             <div class="contenedor-button">
-                <button type="button" class="boton-contacto w-100">CONTACTO</button>
+                <!-- <button type="button" class="boton-contacto w-100">CONTACTO</button> -->
             </div>
         </div>
     </section>
     
     <!-- Main -->
-    <main class="contenedor sombra">
-        <h2>Mis servicios</h2>
+    <main>
+        <section id="inicio" class="contenedor sombra">
+            <div class="contenedor-inicio">
+                <div class="inicio-texto">
+                    <p>Soy Johan Montero, un apasionado freelance especializado en diseño web y optimización digital. Mi misión es ayudarte a destacar en el mundo online con soluciones creativas y efectivas, hechas a la medida de tus necesidades.
+                    
+                    Creo en el poder de la colaboración. Trabajo contigo en cada etapa para asegurarme de que tu visión se convierta en una realidad digital que no solo impresione, sino que también genere resultados tangibles.</p>
+                </div>
+
+                <div class="inicio-img">
+                    <img src="./assets/img/concepto-diseno-web-dibujos_1134-77.avif" alt="">
+                </div>
+            </div>
+        </section>
         
-        <div class="servicios">
-            <section class="servicio">
-                <h3>Diseño Web</h3>
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"></path> <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> </svg> 
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam impedit aliquid neque quas a! Non rerum quas cupiditate. Mollitia dolorem enim sapiente modi. Minus ullam veniam dolore accusamus adipisci!
-                </p>
-            </section class="servicio">
-            
-            <section class="servicio">
-                <h3>Paginas Web</h3>
-
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M20.942 13.02a9 9 0 1 0 -9.47 7.964"></path> <path d="M3.6 9h16.8"></path> <path d="M3.6 15h9.9"></path> <path d="M11.5 3a17 17 0 0 0 0 18"></path> <path d="M12.5 3c2 3.206 2.837 6.913 2.508 10.537"></path> <path d="M20 21l2 -2l-2 -2"></path> <path d="M17 17l-2 2l2 2"></path> </svg> 
-
-                </div>
+        <section id="servicios" class="servicios contenedor sombra">
+            <h2>Mis servicios</h2>
+            <div class="content-servicios">
+                <section class="servicio">
+                    <h3>Diseño Web</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"></path> <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path> </svg> 
+                    </div>
+                    <p>
+                        Doy vida a sitios web que encapsulan la esencia de tu marca y fascinan a tus visitantes desde el primer vistazo. Cada diseño es una creación única, meticulosamente elaborada para no solo impresionar visualmente, sino también para ofrecer una funcionalidad impecable y una experiencia de usuario inigualable.
+                    </p>
+                </section class="servicio">
                 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam impedit aliquid neque quas a! Non rerum quas cupiditate. Mollitia dolorem enim sapiente modi. Minus ullam veniam dolore accusamus adipisci!
-                </p>
-            </section class="servicio">
-            
-            <section class="servicio">
-                <h3>Optimizacion de paginas web</h3>
+                <section class="servicio">
+                    <h3>Paginas Web</h3>
                 
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                        <path d="M11.992 21c-.728 -.003 -1.455 -.442 -1.667 -1.317a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c.882 .214 1.32 .95 1.317 1.684"></path>
-                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                        <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
-                    </svg>
-                </div>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="2"> <path d="M20.942 13.02a9 9 0 1 0 -9.47 7.964"></path> <path d="M3.6 9h16.8"></path> <path d="M3.6 15h9.9"></path> <path d="M11.5 3a17 17 0 0 0 0 18"></path> <path d="M12.5 3c2 3.206 2.837 6.913 2.508 10.537"></path> <path d="M20 21l2 -2l-2 -2"></path> <path d="M17 17l-2 2l2 2"></path> </svg> 
+                
+                    </div>                    
+                    <p>
+                        Desarrollo sitios web a medida. Cada proyecto es una mezcla de creatividad y precisión técnica, asegurando que tu página web no solo sea visualmente impactante, sino también altamente funcional y optimizada para una experiencia de usuario excepcional. Desde conceptos innovadores hasta una implementación impecable, mi objetivo es que tu presencia online sea única y memorable.
+                    </p>
+                </section class="servicio">
+                
+                <section class="servicio">
+                    <h3>Optimizacion de paginas web</h3>
+                    
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M11.992 21c-.728 -.003 -1.455 -.442 -1.667 -1.317a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c.882 .214 1.32 .95 1.317 1.684"></path>
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                            <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
+                        </svg>
+                    </div>                
+                    <p>
+                        Mejora tu presencia en línea con servicios de optimización avanzada. Aumentamos la velocidad, accesibilidad y visibilidad de tu sitio web para garantizar una experiencia de usuario fluida y un mejor posicionamiento en motores de búsqueda. Desde la optimización de contenido y la estructura del sitio, llevamos tu página al siguiente nivel.
+                    </p>
+                </section>
+            </div>
+        </section>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam impedit aliquid neque quas a! Non rerum quas cupiditate. Mollitia dolorem enim sapiente modi. Minus ullam veniam dolore accusamus adipisci!
-                </p>
-            </section class="servicio">
-        </div>
-    
-        <!-- Contacto -->
-        <section>
-            <h2>Contacto</h2>
+        <section id="contacto" class="contacto">
             <form action="" class="formulario" id="formularioContacto">
+                <h2>Contacto</h2>
                 <fieldset>
-                    <legend>Contantame llenando los campos.</legend>
-
+                    <legend>Contactame llenando los campos.</legend>
+                    
                     <div class="contenedor-campos">
                         <div class="campo">
                             <label for="nombre">* Nombre</label>
