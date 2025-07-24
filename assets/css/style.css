@@ -19,40 +19,105 @@ body{
     font-size: 1.6rem;
      height: 100%;
      font-family: var(--fuentePrincipal);
-     /* background-color: black; */
+     background-color: var(--fondo);
      color: var(--secondary-color);
 }
 
 /*************** VARIABLES  Y UTILIDADES***************/
 :root{
-    /* Colores */
-   /*  --colorFondo: #000000;
-    --fondoNav:  #60696bd5;
-    --colorHoverNav: #3a3a3a;
-    --colorBlanco: white; */
 
-    --primary-color: #6a5acd; /* SlateBlue */
-    --secondary-color: #f0f8ff; /* AliceBlue */
+    /* Colores */
+    /* --fondo: linear-gradient(to top, #accbee9a 0%, #e7f0fd 100%); */
+    --fondo: #e7edf8ff;
+    --primary-color: #6a5acd; 
+    --primary-color-dark: #5847c7; 
+    --secondary-color: #c6e5ff;
     --dark-color: #333;
     --light-color: #f4f4f4;
 
     /* Fuente */
     --fuentePrincipal: 3.8rem;
-
     --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+
+.centrado{
+    margin: 0 auto;
+}
+
+.btn-redondo{
+    border-radius: 30rem !important;
+    padding: 1rem 2rem !important;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-redondo:hover{
+    background-color: var(--primary-color-dark);
+}
+
+.section-title {
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
 /*************** ESTILOS GENERALES ***************/
 
+.typing-texto{
+    color: var(--dark-color);
+}
+
+h1{
+    font-size: 3.8rem !important;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 3rem !important;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+h3{
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+h4{
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    color: var(--dark-color);
+    font-size: 1.3rem;
+}
 
 /*************** HEADER ***************/
 .navbar{
-    transition: background-color 03s ease;
+    transition: background-color 02s ease;
     padding: 2rem 0;
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .navbar-brand {
@@ -95,16 +160,12 @@ body{
 
 /*************** HERO ***************/
 .hero{
-    background-image: url('../img/hero_2.jpg');
+    background-image: var(--fondo);
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .hero-title {
@@ -120,7 +181,7 @@ body{
 .hero-subtitle {
     font-size: 1.5rem;
     font-weight: 300;
-    margin-top: 1rem;
+    padding-top: 4rem;
 }
 
 .typing-cursor {
@@ -129,4 +190,74 @@ body{
     height: 1.5rem;
     background-color: var(--dark-color);
     animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/*************** SOBRE NOSOTROS ***************/
+.sobre-nosotros-content{
+    background-color: var(--light-color);
+    padding: 5rem 0;
+}
+
+.sobre-nosotros-img{
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.sobre-nosotros-texto{
+    margin-top: 2rem;
+}
+
+.sobre-nosotros-texto p{
+    text-align: justify;
+}
+
+.skill-tag{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+/*************** SERVICIOS ***************/
+.servicios-content{
+    padding: 5rem 0;
+}
+
+.content-card{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.servicios-card{
+    background-color: var(--light-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: calc(25% - 2rem);
+    color: var(--dark-color);
+}
+
+.servicios-card-icon{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.serivicios-card-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.servicios-card-body{
+    font-size: 1.1rem;
 }

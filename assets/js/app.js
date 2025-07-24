@@ -1,5 +1,47 @@
 function init() {
-    
+    textosHeader();
+    scrollNav();
+}
+
+function textosHeader() {
+    const typingTextElement = document.getElementById('typing-text');
+        const words = ["Desarrollo Web.", "Diseño UI/UX.", "Paginas web a tu medida."];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+            }
+
+            const typingSpeed = isDeleting ? 100 : 200;
+            setTimeout(type, typingSpeed);
+        }
+        if(typingTextElement) type();
+}
+
+function scrollNav() {
+    const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 }
 
 function obtenerCampos() {
