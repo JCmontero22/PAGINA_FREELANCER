@@ -261,3 +261,20 @@ p{
 .servicios-card-body{
     font-size: 1.1rem;
 }
+
+/*************** PROCESO ***************/
+.content-proceso{
+    background-color: var(--light-color);
+    padding: 5rem 0;
+}
+
+.iconProceso{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+/*************** OPINIONES ***************/
+.content-opiniones{
+    padding: 5rem 0;
+}
